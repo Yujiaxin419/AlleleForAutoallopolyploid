@@ -145,5 +145,6 @@ def pipe(faA, faB, allele, threads, identCutf, covCutf):
 if __name__ == "__main__":
     if len(sys.argv) < 7:
         print("Usage: {}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(sys.argv[0], "<cds/pep of A>", "<cds/pep of B>", "<allele_table>", '<threads>', '<identity cutoff>', '<covrage cutoff>'))
+        sys.exit()
     faA, faB, allele, threads, identCutf, covCutf = sys.argv[1:7]
     pipe(faA, faB, allele, threads, identCutf, covCutf)
